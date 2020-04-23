@@ -1,0 +1,83 @@
+import random
+
+
+name = input("what is your name?:")
+play=True
+while play:
+    difficulty = int(input("well " + name + ", what difficulty would you like? type 1 for easy, 2 for medium or 3 for hard?"))
+    if difficulty == 1:
+  print("welcome to easy")
+    if difficulty == 2:
+   print ("welcome to medium")
+    if difficulty == 3:
+    print ("welcome to hard")
+    
+    if difficulty == 1:
+        number=random.randit(1,10)
+        print("guess a number between 1 and 10")
+        guesses=0
+        
+        while guesses < 6:
+            
+            guess=int(input("enter guess here:"))
+            guesses+=1
+            guessesleft= 6 - guesses
+        
+            if guess == number:
+                break
+            if guess == number:
+             print("you got it right")
+             
+        else:
+                print("that was wrong")
+                
+                print ("you have " + guessesleft + "guesses left")
+        
+        print("game over")
+    
+    if difficulty == 2:
+        number=random.randit(1,20)
+        print("guess a number between 1 and 20")
+        guesses=0
+        
+        while guesses < 4:
+            
+            guess=int(input("enter guess here:"))
+            guesses+=1
+            guessesleft= 4 - guesses
+        
+            if guess == number:
+                break
+            if guess == number:
+             print("you got it right")
+             
+        else:
+                print("that was wrong")
+                
+                print ("you have " + guessesleft + "guesses left")
+        
+        print("game over")
+                
+    if difficulty == 3:
+        number=random.randit(1,50)
+        print("guess a number between 1 and 50")
+        guesses=0
+        
+        while guesses < 3:
+            
+            guess=int(input("enter guess here:"))
+            guesses+=1
+            guessesleft= 3 - guesses
+        
+            if guess == number:
+                break
+            if guess == number:
+             print("you got it right")
+             
+        else:
+                print("that was wrong")
+                
+                print ("you have " + guessesleft + "guesses left")
+        
+        print("game over")
+                
